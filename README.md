@@ -1,16 +1,43 @@
-# ceo_assist
+# CEO Assist
 
-A new Flutter project.
+A Flutter-based cross-platform mobile application for the CEO Assist project. This app provides a mobile interface to interact with the Django backend, enabling seamless functionality across iOS, Android, and web platforms.
+
+## Features
+
+- Cross-platform support (iOS, Android, Web)
+- Seamless integration with Django backend
+- Native performance with Flutter
+
+## Prerequisites
+
+- Flutter 3.0 or higher
+- Dart SDK
+- Android Studio (for Android development)
+- Xcode (for iOS development)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository
+2. Run `flutter pub get` to install dependencies
+3. Update the backend API endpoint in the configuration
+4. Run `flutter run` to launch on your connected device/emulator
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+lib/              - Dart application code
+android/          - Android-specific configuration
+ios/              - iOS-specific configuration
+web/              - Web platform files
+test/             - Widget tests
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Building
+
+- **Android**: `flutter build apk` or `flutter build appbundle`
+- **iOS**: `flutter build ios`
+- **Web**: `flutter build web`
+
+## Backend
+
+This project requires the Django backend to be running. Ensure the backend API is properly configured in the app settings.
